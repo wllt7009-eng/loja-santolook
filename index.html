@@ -1,110 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santo Look | Boutique Premium</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Santo Look — Peças exclusivas para mulheres autênticas</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Primary stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta for mobile smooth experience -->
+  <meta name="theme-color" content="#f8f4f2">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container header-flex">
-            <div class="logo">Santo Look</div>
-            <nav class="nav-desktop">
-                <a href="#inicio">Início</a>
-                <a href="#colecao">Coleção</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-            <div class="menu-icon"><i class="fas fa-bars"></i></div>
-        </div>
-    </header>
+  <!-- Header / Nav -->
+  <header id="header" class="header transparent">
+    <div class="container header-inner">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav">
+        <span class="hamburger"></span>
+      </button>
 
-    <section class="hero" id="inicio">
-        <div class="container hero-content">
-            <span class="sub-tag reveal">Curadoria Exclusiva</span>
-            <h1 class="reveal">Peças Exclusivas <br><span>para Mulheres Autênticas</span></h1>
-            <p class="reveal">Descubra uma curadoria única de moda feminina que celebra sua essência.</p>
-            <div class="hero-actions reveal">
-                <a href="#colecao" class="btn-dark">Ver Coleção</a>
-                <a href="https://wa.me/message/NJDBXH5AEEGTN1" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale Conosco</a>
-            </div>
+      <a class="brand" href="#hero" aria-label="Santo Look — Home">
+        <!-- Replace with inline SVG or image logo -->
+        <span class="logo">Santo Look</span>
+      </a>
+
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#gallery">Coleção</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#testimonials">ELAS USAM ✨</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <!-- Background image via CSS for better cover control -->
+    </div>
+    <div class="container hero-content">
+      <h1 class="hero-title reveal">Peças exclusivas para mulheres autênticas</h1>
+      <p class="hero-sub reveal">Curadoria Lais Moura — estilo único e atemporal</p>
+      <a class="btn btn-cta reveal" href="#gallery">Ver Coleção</a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <main>
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title reveal">Coleção</h2>
+        <p class="section-sub reveal">Imagens do Instagram organizadas em grid profissional.</p>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Each figure uses data-title for hover overlay text.
+               Replace src with optimized images (webp preferred) in /assets/images/ -->
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163447_087.jpg" alt="Peça 1" loading="lazy" width="800" height="1000" data-srcset="">
+            <figcaption class="card-caption">Vestido Lais</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163441_724.jpg" alt="Peça 2" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Blusa Rosa Seco</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163417_270.jpg" alt="Peça 3" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Saia Midi</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163403_433.jpg" alt="Peça 4" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Tricot Exclusivo</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163353_160.jpg" alt="Peça 5" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Macacão Sofisticado</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163342_248.jpg" alt="Peça 6" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Camisa Premium</figcaption>
+          </figure>
+
+          <!-- continue adding figures for all provided images -->
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163330_191.jpg" alt="Peça 7" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Look Casual</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163330_076.jpg" alt="Peça 8" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Conjunto Elegante</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163323_114.jpg" alt="Peça 9" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Vestido Curto</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163323_013.jpg" alt="Peça 10" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Saia Envelope</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163318_305.jpg" alt="Peça 11" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Blusa Nó</figcaption>
+          </figure>
+
+          <figure class="card reveal">
+            <img src="assets/images/santo_loook_20260424_163610_592.jpg" alt="Peça 12" loading="lazy" width="800" height="1000">
+            <figcaption class="card-caption">Vestido Longo</figcaption>
+          </figure>
+
         </div>
+      </div>
     </section>
 
-    <section class="galeria" id="colecao">
-        <div class="container">
-            <div class="section-title">
-                <span>Exclusividade & Estilo</span>
-                <h2>Nossa Coleção</h2>
-            </div>
-            <div class="produtos-grid">
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163323_013.jpg" alt="Look"></div>
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163323_114.jpg" alt="Look"></div>
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163330_076.jpg" alt="Look"></div>
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163330_191.jpg" alt="Look"></div>
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163342_248.jpg" alt="Look"></div>
-                <div class="foto-item reveal"><img src="santo_loook_20260424_163353_160.jpg" alt="Look"></div>
-            </div>
-        </div>
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title reveal">Sobre</h2>
+        <p class="reveal">Santo Look é uma curadoria de peças femininas selecionadas por Lais Moura. Nossa loja física fica na Rua Teófilo Otoni, 1131, Centro, Sete Lagoas — onde a exclusividade encontra a autenticidade.</p>
+      </div>
     </section>
 
-    <section class="sobre" id="sobre">
-        <div class="container grid-sobre">
-            <div class="sobre-text reveal">
-                <span>Nossa História</span>
-                <h2>Sobre Nós</h2>
-                <div class="item-sobre">
-                    <i class="far fa-star"></i>
-                    <div>
-                        <h4>Curadoria Exclusiva</h4>
-                        <p>Cada peça é cuidadosamente selecionada por Lais Moura, garantindo qualidade e elegância.</p>
-                    </div>
-                </div>
-                <div class="item-sobre">
-                    <i class="far fa-heart"></i>
-                    <div>
-                        <h4>Estilo Autêntico</h4>
-                        <p>Acreditamos que a moda é uma forma de expressão da personalidade de cada mulher.</p>
-                    </div>
-                </div>
-                <div class="item-sobre">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Nossa Localização</h4>
-                        <p>Rua Teófilo Otoni, 1131, Centro - Sete Lagoas - MG</p>
-                    </div>
-                </div>
-            </div>
-            <div class="sobre-img reveal">
-                <img src="santo_loook_20260424_163403_433.jpg" alt="Boutique">
-            </div>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <h2 class="section-title reveal">ELAS USAM ✨</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial reveal">
+            <p>“Amei o caimento — me senti poderosa!”</p>
+            <footer>— Marina</footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <p>“Peças atemporais e atendimento impecável.”</p>
+            <footer>— Camila</footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <p>“Qualidade superior, tecido lindo!”</p>
+            <footer>— Juliana</footer>
+          </blockquote>
         </div>
+      </div>
     </section>
 
-    <footer class="footer" id="contato">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>Santo Look</h3>
-                <p>Peças exclusivas para mulheres autênticas.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Redes Sociais</h4>
-                <a href="https://www.instagram.com/santolook" target="_blank"><i class="fab fa-instagram"></i> @santolook</a>
-            </div>
-        </div>
-        <div class="copyright">
-            © 2026 Santo Look. Todos os direitos reservados.
-        </div>
-    </footer>
+    <!-- Contact / Footer -->
+    <section id="contato" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title reveal">Contato</h2>
+        <p class="reveal">Visite-nos: Rua Teófilo Otoni, 1131, Centro, Sete Lagoas</p>
+        <p class="reveal">WhatsApp: <a href="https://wa.me/message/NJDBXH5AEEGTN1" target="_blank" rel="noopener">Chame no Zap</a></p>
+      </div>
+    </section>
+  </main>
 
-    <a href="https://wa.me/message/NJDBXH5AEEGTN1" class="zap-fixo" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/message/NJDBXH5AEEGTN1" target="_blank" rel="noopener" aria-label="Chame no WhatsApp">
+    <span class="whatsapp-icon" aria-hidden="true">💬</span>
+    <span class="whatsapp-badge">Chame no Zap</span>
+  </a>
 
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Santo Look — Curadoria Lais Moura</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
-</html>
+                                    </html>
